@@ -1,0 +1,11 @@
+<p>
+    Hello I'm the component Entries List
+</p>
+<a [routerLink]="['/']"> <button class="btn btn-primary">Return Home</button> </a>
+<div class="card" style="width: 20rem;">
+    <div class="card-body">
+      <h4 class="card-title">{{entry.title}}</h4>
+      <p class="card-text">{{entry.date | date: 'dd/MM/yyyy'}}</p>
+      <p class="card-text">{{entry.content}}</p>
+    </div>
+  </div>
